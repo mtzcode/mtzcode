@@ -1,20 +1,18 @@
 # Hello, world! 👋
 
-```dart
+```javascript
 class Pabllo {
-  final name = "Pabllo Oliveira Martins";
-  final position = "Desenvolvedor Junior";
-  final primarySkillset = "Dart/Flutter";
-  final languages = ["Html", "Css", "Python", "MySQL"];
+  constructor() {
+    this.name = "Pabllo Oliveira Martins";
+    this.position = "Desenvolvedor Junior";
+    this.primarySkillset = "JavaScript";
+    this.languages = ["HTML", "CSS", "PHP", "MySQL"];
+  }
 
-  @override
-  String toString() {
-    return '''Meu nome é $name, sou $position,
-    me dou bem com $primarySkillset e conheço ${languages.join(", ")}''';
+  toString() {
+    return `Meu nome é ${this.name}, sou ${this.position},\nme dou bem com ${this.primarySkillset} e conheço ${this.languages.join(", ")}`;
   }
 }
 
-void main() {
-  Pabllo mtzcode = Pabllo();
-  print(mtzcode);
-}
+const mtzcode = new Pabllo();
+console.log(mtzcode.toString());
