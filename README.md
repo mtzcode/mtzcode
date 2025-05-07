@@ -10,7 +10,9 @@ class Pabllo {
   }
 
   toString() {
-    return `Meu nome é ${this.name}, sou ${this.position},\nme dou bem com ${this.primarySkillset} e conheço ${this.languages.join(", ")}`;
+    return `Meu nome é ${this.name}, 
+    sou ${this.position},\nme dou bem com ${this.primarySkillset}
+    e conheço ${this.languages.join(", ")}`;
   }
 }
 
