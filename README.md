@@ -8,7 +8,19 @@
 
 ###
 
-<p align="left">```Dart<br><br>class Pabllo {<br>  final String name = "Pabllo Oliveira Martins";<br>  final String position = "Desenvolvedor Júnior";<br>  final List<String> languages = ["Flutter", "Dart", "Python", "SQL"];<br><br>  String introduce() {<br>    return "Meu nome é $name,\n"<br>           "sou $position,\n"<br>           "e atualmente estou focado em: ${languages.join(', ')}.";<br>  }<br>}<br><br>void main() {<br>  final pabllo = Pabllo();<br>  print(pabllo.introduce());<br>}<br><br><br>```</p>
+```Dart
+
+class Pabllo {final String name = "Pabllo Oliveira Martins";
+final String position = "Desenvolvedor Júnior";
+final List<String> languages = ["Flutter", "Dart", "Python", "SQL"];
+String introduce() {return "Meu nome é $name,\n"
+"sou $position,\n" 
+"e atualmente estou focado em: ${languages.join(', ')}.";
+}}<br
+
+void main() {final pabllo = Pabllo(); print(pabllo.introduce());}
+
+```
 
 ###
 
