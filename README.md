@@ -1,20 +1,18 @@
-# Hello, world! 👋
+#Hello, guys! ✌️
 
-```javascript
 class Pabllo {
-  constructor() {
-    this.name = "Pabllo Oliveira Martins";
-    this.position = "Desenvolvedor Junior";
-    this.primarySkillset = "JavaScript";
-    this.languages = ["HTML", "CSS", "PHP", "MySQL"];
-  }
+  final String name = "Pabllo Oliveira Martins";
+  final String position = "Desenvolvedor Júnior";
+  final List<String> languages = ["Flutter", "Dart", "Python", "SQL"];
 
-  toString() {
-    return `Meu nome é ${this.name}, 
-    sou ${this.position},\nme dou bem com ${this.primarySkillset}
-    e conheço ${this.languages.join(", ")}`;
+  String introduce() {
+    return "Meu nome é $name,\n"
+           "sou $position,\n"
+           "e atualmente estou focado em: ${languages.join(', ')}.";
   }
 }
 
-const mtzcode = new Pabllo();
-console.log(mtzcode.toString());
+void main() {
+  final pabllo = Pabllo();
+  print(pabllo.introduce());
+}
