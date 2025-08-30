@@ -8,24 +8,20 @@
 
 ###
 
-```Dart
+```Python
 
-class Pabllo {
-  final String name = "Pabllo Oliveira Martins";
-  final String position = "Desenvolvedor Júnior";
-  final List<String> languages = ["Flutter", "Dart", "Python", "SQL"];
+def introduce():
+    name = "Pabllo Oliveira Martins"
+    position = "Desenvolvedor Júnior"
+    languages = ["Html", "CSS", "JavaScript", "Python", "SQL"]
 
-  String introduce() {
-    return "Meu nome é $name.\n"
-           "Sou $position,\n"
-           "e atualmente estou focado em: ${languages.join(', ')}.";
-  }
-}
+    return f"Meu nome é {name}.\nSou {position},\ne atualmente estou focado em: {', '.join(languages)}."
 
-void main() {
-  final pabllo = Pabllo();
-  print(pabllo.introduce());
-}
+
+# Programa principal
+if __name__ == "__main__":
+    print(introduce())
+
 
 ```
 
