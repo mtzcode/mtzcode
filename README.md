@@ -9,19 +9,23 @@
 ###
 
 ```Python
+class Pabllo:
+    def __init__(self):
+        self.name = "Pabllo Oliveira Martins"
+        self.position = "Desenvolvedor Júnior"
+        self.languages = ["HTML", "CSS", "JavaScript", "Python", "SQL"]
 
-def introduce():
-    name = "Pabllo Oliveira Martins"
-    position = "Desenvolvedor Júnior"
-    languages = ["Html", "CSS", "JavaScript", "Python", "SQL"]
+    def introduce(self):
+        return (
+            f"Meu nome é {self.name}.\n"
+            f"Sou {self.position},\n"
+            f"e atualmente estou focado em: {', '.join(self.languages)}."
+        )
 
-    return f"Meu nome é {name}.\nSou {position},\ne atualmente estou focado em: {', '.join(languages)}."
 
-
-# Programa principal
 if __name__ == "__main__":
-    print(introduce())
-
+    pabllo = Pabllo()
+    print(pabllo.introduce())
 
 ```
 
